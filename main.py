@@ -1,3 +1,5 @@
+import utils.transport
+import utils.session
 import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
@@ -336,8 +338,8 @@ ax.bar(x, df['count'], color=colors)
 
 # Set the title and labels
 ax.set_title('Memory Distribution')
-ax.set_xlabel('Memory (GB)')
-ax.set_ylabel('Number of Laptops')
+ax.set_xlabel('Memory')
+ax.set_ylabel('Count')
 
 # Set the x-ticks to display memory values
 ax.set_xticks(x)
