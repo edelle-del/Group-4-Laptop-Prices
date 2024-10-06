@@ -1,3 +1,5 @@
+import utils.transport
+import utils.session
 import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
@@ -35,12 +37,10 @@ sum
 desc = df.describe()
 desc
 
-"# Company Column"
+"# Laptop Companies" #daniel santillan
+"# Products" #daniel santillan
+"# TypeName" #daniel santillan
 
-company = df['Company'].value_counts()
-company
-st.write('')
-st.write('')
 
 #Screen Resolution Bar Graph (SOPHIA VITUG)
 
@@ -212,6 +212,18 @@ st.pyplot(fig)
 st.write('')
 st.write('')
 
+#RAM (GB) GRAPH (EDELLE LUMABI)
+st.title('RAM (GB) Distribution')
+
+# Create the plot
+fig, ax = plt.subplots(figsize=(10, 8))
+sns.histplot(df['RAM (GB)'], color='green', ax=ax)
+ax.set_title('RAM (GB) Distribution')
+ax.set_xlabel('RAM (GB)')
+ax.set_ylabel('Frequency')
+
+# Display the plot
+st.pyplot(fig)
 
 #GPU Type Bar Graph (JOHN LARENCE LUSAYA)
 gpus = [
