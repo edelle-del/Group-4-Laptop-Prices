@@ -1,3 +1,5 @@
+import utils.transport
+import utils.session
 import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
@@ -67,7 +69,6 @@ st.write('')
 #title top products
 st.title("Top 20 Products by Count")
 st.write("Among all the brands, the **XPS 13** from Dell takes on the lead as the most sold item based on the data provided.")
-
 
 # Title  TypeName
 st.title("TypeName Pie Graph (Daniel Santillan)")
